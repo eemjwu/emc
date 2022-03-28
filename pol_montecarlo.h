@@ -3,11 +3,12 @@
 #include <stdlib.h>
 #include <math.h>
 #include <complex>
-#include <fstream.h>
+#include <fstream>
 #include "mtwist.h"
 #include "scatterer.h"
 
 typedef std::complex<double> dcmplx;
+using namespace std;
 
 #define pi M_PI
 #define ranf mtrand->drand

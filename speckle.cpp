@@ -1,8 +1,10 @@
 #include "pol_montecarlo.h"
 #include "netcdfcpp.h"
 #include <math.h>
-#include <iostream.h>
+#include <iostream>
 #include <unistd.h>
+
+using namespace std;
 
 // Remember all the length and time units are in mfp=lsa.
 const double n_water=1.33;

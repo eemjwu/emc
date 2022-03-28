@@ -2,9 +2,9 @@
 #FC = ifort -r8 -g
 #FLIB = -L/opt/intel_fc_80/lib -lifcore 
 # use g77 and fort77 
-FC = fort77 -r8 -g
-FLIB = -lg2c
-CC = g++ -O3 -g -Wall -Wunused-variable -I.
+FC = gfortran -g
+FLIB = -lgfortran
+CC = g++ -O3 -g -Wall -Wunused-variable -I. -I./netCDF/include
 
 mtwist.o: mtwist.c
 	${CC} -c mtwist.c
